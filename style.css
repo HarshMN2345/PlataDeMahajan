@@ -1,0 +1,287 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Arvo';
+}
+
+body{
+  background-image: url("https://images.axios.com/3L52AyTk0-os9iwxsTz1MHwFr5Y=/0x0:1920x1080/1920x1080/2020/05/29/1590784053821.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.container{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:100vh;
+  background-color: #f8f8f8;
+  width:100%;
+}
+.col2{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  border-color: #24318e;
+  border-width: 20px;
+}
+.contact{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:100vh;
+  background-color: #191fcd;
+  width:100%;
+
+}
+.about-me-container {
+  display: flex;
+  margin:20px;
+}
+.image-container {
+  flex: 1;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.content {
+  flex: 1;
+  padding: 20px;
+}
+p{
+  font-size: 1.5rem;
+  color: #f8f8f8;
+  
+}
+.contactreal{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-image: url("https://www.newsnationnow.com/wp-content/uploads/sites/108/2023/11/6545357c57bcb7.14644587.jpeg?w=2560&h=1440&crop=1");
+  width:100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size:2rem;
+  height: 100vh;
+
+}
+#ui{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:100vh;
+  background-color: #f8f8f8;
+  width:100%;
+  font-size:2rem;
+}
+.main{
+  height:100vh;
+  width:100%;  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+h1{
+  text-align:center;
+  background-color: #f0f2f4;
+  text-transform: uppercase;
+  color: #24318e; 
+  font-size: 4rem;
+}
+
+.roller{
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #12314f;
+}
+
+
+#spare-time{
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #db1010;
+  
+}
+.gallery {
+  display: grid;
+  gap: 10px; 
+  grid-template-columns: auto 0 auto;
+  place-items: center;
+}
+.gallery > img {
+  width: 200px; /* control the size */
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: .35s;
+  filter: grayscale();
+  cursor: pointer;
+}
+.gallery > img:hover {
+  filter: grayscale(0%);
+}
+
+.gallery > img:nth-child(1) {
+  clip-path: polygon(0 0,50% 0,100% 100%,0 100%);
+}
+.gallery > img:nth-child(2) {
+  clip-path: polygon(0 0,100% 0,50% 100%);
+}
+.gallery > img:nth-child(3) {
+  clip-path: polygon(50% 0,100% 0,100% 100%,0 100%);
+}
+.gallery > img:nth-child(4) {
+  clip-path: polygon(0 0,100% 0,50% 100%,0 100%);
+}
+.gallery > img:nth-child(5) {
+  clip-path: polygon(50% 0,100% 100%,0% 100%);
+}
+.gallery > img:nth-child(6) {
+  clip-path: polygon(0 0,100% 0,100% 100%,50% 100%);
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;  
+}
+#social-links {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#social-links li {
+  list-style: none;
+}
+
+#social-links li a {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+#social-links li a:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+#social-links li a .fab {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size: 24px;
+  color: #262626;
+  transition: .5s;
+}
+
+#social-links li:nth-child(1) a:hover .fab {
+  color: #3b5998;
+}
+
+#social-links li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+
+#social-links li:nth-child(3) a:hover .fab {
+  color: #dd4b39;
+}
+
+#social-links li:nth-child(4) a:hover .fab {
+  color: #007bb6;
+}
+
+#social-links li:nth-child(5) a:hover .fab {
+  color: #e4405f;
+}
+#blow{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:100vh;;
+  width:100%;
+  font-size:2rem;
+  color:#db1010
+
+}
+
+@keyframes slide {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -4rem;    
+  }
+  50%{
+    top: -8rem;
+  }
+  72.5%{
+    top: -12.25rem;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  h1{
+  text-align:center;
+  text-transform: uppercase;
+  color: #F1FAEE; 
+  font-size: 2.125rem;
+}
+  
+  .roller{
+  height: 2.6rem; 
+  line-height: 2.125rem;  
+  }
+  
+  #spare-time {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .roller #rolltext {  
+  animation: slide-mob 5s infinite;  
+}
+
+  
+  @keyframes slide-mob {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -2.125rem;    
+  }
+  50%{
+    top: -4.25rem;
+  }
+  72.5%{
+    top: -6.375rem;
+  }
+}
+}
